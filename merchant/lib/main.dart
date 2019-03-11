@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/Models/page_view_model.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
-
+import './here.dart';
 /// This is the main method of app, from here execution starts.
 void main() => runApp(MyApp());
 
@@ -12,30 +12,27 @@ class MyApp extends StatelessWidget {
   final pages = [
     PageViewModel(
         pageColor: const Color(0xFF03A9F4),
-        // iconImageAssetPath: 'assets/air-hostess.png',
-        bubble: Image.asset('assets/air-hostess.png'),
         body: Text(
-          'Haselfree  booking  of  flight  tickets  with  full  refund  on  cancelation',
+          'Find Customers you really need',
         ),
         title: Text(
           'Flights',
         ),
         textStyle: TextStyle(fontFamily: 'MyFont', color: Colors.white),
         mainImage: Image.asset(
-          'assets/airplane.png',
+          'assets/pic.png',
           height: 285.0,
           width: 285.0,
           alignment: Alignment.center,
         )),
     PageViewModel(
       pageColor: const Color(0xFF8BC34A),
-      iconImageAssetPath: 'assets/waiter.png',
       body: Text(
         'We  work  for  the  comfort ,  enjoy  your  stay  at  our  beautiful  hotels',
       ),
       title: Text('Hotels'),
       mainImage: Image.asset(
-        'assets/hotel.png',
+        'assets/pic.png',
         height: 285.0,
         width: 285.0,
         alignment: Alignment.center,
@@ -44,13 +41,12 @@ class MyApp extends StatelessWidget {
     ),
     PageViewModel(
       pageColor: const Color(0xFF607D8B),
-      iconImageAssetPath: 'assets/taxi-driver.png',
       body: Text(
         'Easy  cab  booking  at  your  doorstep  with  cashless  payment  system',
       ),
       title: Text('Cabs'),
       mainImage: Image.asset(
-        'assets/taxi.png',
+        'assets/pic.png',
         height: 285.0,
         width: 285.0,
         alignment: Alignment.center,
@@ -68,8 +64,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ), //ThemeData
       home: Builder(
-        builder: (context) =>
-            IntroViewsFlutter(
+        builder: (context) => IntroViewsFlutter(
               pages,
               onTapDoneButton: () {
                 Navigator.push(
@@ -99,8 +94,8 @@ class HomePage extends StatelessWidget {
         title: Text('Here Merchant'),
       ), //Appbar
       body: Center(
-        child: Text("This is the home page of the app"),
+        child: HereDrop(),
       ), //Center
-    ); //Scaffold
+    );
   }
 }
