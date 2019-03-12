@@ -130,7 +130,7 @@ class _OffersState extends State<Offers> {
       'category': 'food',
       'offer': controller.text,
       'time': DateTime.now(),
-      'image' : 'https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Fast-Food-PNG-Clipart/Grilled_Steak_PNG_Clipart.png?m=1507172108'
+      'image' : 'https://cdn.pixabay.com/photo/2014/12/22/00/03/food-576689_640.png'
     });
   }
 }
