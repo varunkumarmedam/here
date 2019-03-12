@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "346293054005",
+    "firebase_url": "https://here-ec280.firebaseio.com",
+    "project_id": "here-ec280",
+    "storage_bucket": "here-ec280.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346293054005:android:04e2683e5341c04e",
+        "android_client_info": {
+          "package_name": "com.example.customerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346293054005-nv9nc36477td0g6go7eau3103ui96028.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgCbGn2zNyjFbHkeUczvCRz_4ITzoxWBk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

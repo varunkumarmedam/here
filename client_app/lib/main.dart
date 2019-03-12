@@ -1,18 +1,17 @@
+import 'package:customerapp/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/Models/page_view_model.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
 
-/// This is the main method of app, from here execution starts.
+
 void main() => runApp(App());
 
-/// App widget class
+
 
 class App extends StatelessWidget {
-  //making list of pages needed to pass in IntroViewsFlutter constructor.
   final pages = [
     PageViewModel(
         pageColor: const Color(0xFF03A9F4),
-        // iconImageAssetPath: 'assets/air-hostess.png',
         bubble: Image.asset('assets/images.jpeg'),
         body: Text(
           'Haselfree  booking  of  flight  tickets  with  full  refund  on  cancelation',
@@ -63,10 +62,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'IntroViews Flutter', //title of app
+      title: 'IntroViews Flutter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-      ), //ThemeData
+      ),
       home: Builder(
         builder: (context) =>
             IntroViewsFlutter(
@@ -76,31 +75,15 @@ class App extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => HomePage(),
-                  ), //MaterialPageRoute
+                  ),
                 );
               },
               pageButtonTextStyles: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,
               ),
-            ), //IntroViewsFlutter
-      ), //Builder
-    ); //Material App
-  }
-}
-
-/// Home Page of our example app.
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
-      ), //Appbar
-      body: Center(
-        child: Text("This is the home page of the app"),
-      ), //Center
-    ); //Scaffold
+            ), 
+      ),
+    );
   }
 }
