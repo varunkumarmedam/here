@@ -27,13 +27,13 @@ class OffersPage extends StatelessWidget {
               return Container(
                 margin: EdgeInsets.only(bottom: 3),
                 height: 80,
-                color: Colors.green,
+                color: Colors.blueGrey,
                 width: double.infinity,
                 child: Row(
                 children:<Widget>[
                 Container(height: 200,
-                width: 40,
-                margin: EdgeInsets.only(right: 15),
+                width: 80,
+                margin: EdgeInsets.only(right: 20),
                 decoration: BoxDecoration(
                   image: DecorationImage(image: NetworkImage(ds['image']),fit: BoxFit.cover)
                 ),),

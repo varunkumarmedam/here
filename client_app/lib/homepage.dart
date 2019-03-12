@@ -86,13 +86,17 @@ List l=<String>["food","travel","cabs","grocery","clothing"];
           ),
           body: Column(
             children: <Widget>[
-              ListTile(title: Text(s,textAlign: TextAlign.center,),
-              onTap: (){
-                showdialog();
-              },
+              Container(
+                margin: EdgeInsets.only(top:4,),
+                color: Colors.tealAccent,
+                child: ListTile(title: Text(s,textAlign: TextAlign.center,),
+                onTap: (){
+                  showdialog();
+                },
+                ),
               ),
               (s=='Whats Ur Searching mood')?Center(
-                child: Text('Select some thing for action'),
+                child: Container(child: Text('Select some thing for action')),
               ):Container(
                 height: 300,
                 width: double.infinity,
