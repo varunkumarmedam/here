@@ -37,7 +37,7 @@ class HereDrop extends StatelessWidget {
   }
 }
 
-class Test extends StatelessWidget {
+class TestWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
